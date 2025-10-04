@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-// Health check endpoint
+// Health checkk endpoint
 app.get("/api/v1/health", (req, res) => {
   return res.status(200).json({ status: "OK" });
 });
